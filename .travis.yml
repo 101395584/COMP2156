@@ -28,3 +28,28 @@ deploy:
     branch: master
 
 
+branches:
+  only:
+  - master
+
+cache:
+  directories:
+  - node_modules
+
+install:
+  - npm install
+  - npm install -g yarn
+
+script:
+  #- yarn lint
+  - yarn build
+  - mv build/index.html build/404.html
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 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
+  local_dir: build
+  on:
+    branch: master
+
