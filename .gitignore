@@ -1,0 +1,31 @@
+# Ignore macOS system files
+.CFUserTextEncoding
+.DS_Store
+.idlerc/
+.lesshst
+.npm/
+.viminfo
+.zprofile
+.zprofile.macports-saved_2024-01-14_at_23:44:17
+.zsh_history
+.zsh_sessions/
+.packettracer
+
+# Ignore macOS application directories
+Applications/
+
+# Ignore specific directories
+COMP2156_Group54_Assignment/
+Cisco Packet Tracer 8.2.0/
+comp2156/
+
+# Ignore default macOS user directories
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+
